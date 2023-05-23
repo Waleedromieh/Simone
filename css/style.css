@@ -1,0 +1,1324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* outline: solid red; */
+    
+}
+*::selection{
+    background-color: #20c997;
+}
+.setting{
+    z-index: 8888;
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    right: 0%;
+    top: 25%;
+}
+.setting i{
+    background-color: #666;
+    font-size: 30px;
+    color: #fff;
+    border-radius: 5px;
+}
+.nav{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color:rgba(0,0,0,0.5);
+    z-index: 55555;
+}
+.nav img{
+    display: inline-block;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.nav li{
+    display: inline-block;
+    color: #fff;
+    padding: 1rem;
+    transition: 0.5s;
+}
+.nav li:hover{
+    color: #20c997;
+}
+.section-one{
+    height: 100vh;
+    width: 100%;
+background-image: url(../imgs/intro-bg.jpg);
+background-size: cover;
+}
+.layer{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.p1{
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+}
+.p2{
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+h1{
+    font-size: 4rem;
+    padding-bottom: 1.5rem;
+    position: relative;
+}
+h1::after{
+    content:"";
+    color: #fff;
+    font-size: 4rem;
+    animation: word 10s alternate linear infinite;
+}
+@keyframes word {
+    0%{
+        content: "d|";
+    }
+    2%{
+     content: "de|";
+    }
+    4%{
+        content: "des|";
+    }
+    6%{
+        content: "desi|";
+    }
+    8%{
+        content: "desig|";
+    }
+    10%{
+        content: "design|";
+    }
+    12%{
+        content: "designe|";
+    }
+    14%{
+        content: "designer|";
+    }
+    16%{
+        content: "designe|";
+    }
+    18%{
+        content: "design|";
+    }
+    20%{
+        content: "desig|";
+    }
+    22%{
+        content: "desi|";
+    }
+    24%{
+        content: "des|";
+    }
+    26%{
+        content: "de|";
+    }
+    28%{
+        content: "d|";
+    }
+    32%{
+        content: "d|";
+    }
+    34%{
+        content: "de|";
+    }
+    36%{
+        content: "dev|";
+    }
+    38%{
+        content: "deve|";
+    }
+    40%{
+        content: "devel|";
+    }
+    42%{
+        content: "develo|";
+    }
+    44%{
+        content: "develop|";
+    }
+    46%{
+        content: "develope|";
+    }
+    48%{
+        content: "developer|";
+    }
+    50%{
+        content: "develope|";
+    }
+    52%{
+        content: "develop|";
+    }
+    54%{
+        content: "develo|";
+    }
+    56%{
+        content: "devel|";
+    }
+    58%{
+        content: "deve|";
+    }
+    60%{
+        content: "dev|";
+    }
+    62%{
+        content: "de|";
+    }
+    64%{
+        content: "d|";
+    }
+    66%{
+        content: "|";
+    }
+    68%{
+        content: "p|";
+    }
+    70%{
+        content: "ph|";
+    }
+    72%{
+        content: "pho|";
+    }
+    74%{
+        content: "phot|";
+    }
+    76%{
+        content: "photo|";
+    }
+    78%{
+        content: "photog|";
+    }
+    80%{
+        content: "photogr|";
+    }
+    82%{
+        content: "photogra|";
+    }
+    84%{
+        content: "photograp|";
+    }
+    86%{
+        content: "photograph|";
+    }
+    88%{
+        content: "photographe|";
+    }
+    90%{
+        content: "photographer|";
+    }
+    91%{
+        content: "photographe|";
+    }
+    91%{
+        content: "photograph|";
+    }
+    93%{
+        content: "photograp|";
+    }
+    94%{
+        content: "photogra|";
+    }
+    95%{
+        content: "photogr|";
+    }
+    96%{
+        content: "photog|";
+    }
+    97%{
+        content: "photo|";
+    }
+    98%{
+        content: "phot|";
+    }
+    98.5%{
+        content: "pho|";
+    }
+    99%{
+        content: "ph|";
+    }
+    99.5%{
+        content: "p|";
+    }
+    100%{
+        content: "|";
+    }
+    
+}
+.butt1{
+    padding: 0.8rem 2.6rem;
+    border-radius: 50rem;
+    color: #20c997;
+    border-color: #20c997;
+    background-color: transparent;
+    transition: 0.5s;
+}
+.butt1:hover{
+    background-color: #20c997;
+    color: #fff;
+}
+.about{
+    text-align: center;
+
+
+}
+.about h2{
+    padding-top: 100;
+    font-size: 2.25rem;
+    color: #000;
+    position: relative;
+    z-index: 555;
+}
+.brd{
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    left: 46%;
+    background-color: #20c997;
+}
+.about h2::before{
+    content: "ABOUT ME";
+    font-size: 8.25rem ;
+    position: absolute;
+    opacity: 0.1;
+    top: 20%;
+    left: 28%;
+}
+
+.section-two-content{
+    display: flex;
+margin-top: 6rem;
+}
+.left{
+    margin-left: 3rem;
+    width: 60%;
+}
+span{
+    color: #20c997;
+}
+.right{
+    padding-left: 5rem;
+}
+.right ul{
+    list-style: none;
+}
+.right li{
+    padding:10px 0px;
+    border-bottom: solid #666 1px;
+}
+.right button{
+    padding: 0.8rem 2.6rem;
+    border-radius: 2rem;
+    border-color: #20c997;
+    border-style: none;
+    background-color: #20c997;
+    color: #fff;
+    transition: 1s;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+.right button:hover{
+    color: #fff;
+    background-color: #1baa80;
+}
+.about-bott{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3rem;
+    }
+.text{
+    color: #6c757d;
+    padding: 0 5.7rem;
+    text-align: center;
+    border-right: solid #666 0.5px;
+}
+.text h4{
+    margin: 0 0 2rem;
+    font-weight: 500;
+    font-size: 4rem;
+}
+
+.section-three{
+    margin-top: 6rem;
+    width: 100%;
+    background-color: #f8f9fa;
+}
+
+.services{
+    text-align: center;
+}
+.services h2{
+    padding-top: 100;
+    font-size: 2.25rem;
+    color: #000;
+    position: relative;
+    z-index: 555;
+}
+.brd{
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    left: 46%;
+    background-color: #20c997;
+}
+.services h2::before{
+    content: "SERVICES";
+    font-size: 8.25rem ;
+    position: absolute;
+    opacity: 0.1;
+    top: 20%;
+    left: 28%;
+}
+.page-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.page-content i{
+    color: #20c997;
+    background-color: #fff;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 6px;
+    font-size: 2.5em;
+}
+.cont1{
+    width: 40%;
+    display: flex;
+}
+.Resume{
+    text-align: center;
+}
+.Resume h2{
+    padding-top: 100;
+    font-size: 2.25rem;
+    color: #000;
+    position: relative;
+    z-index: 555;
+}
+.brd{
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    left: 46%;
+    background-color: #20c997;
+}
+.Resume h2::before{
+    content: "SUMMARY";
+    font-size: 8.25rem ;
+    position: absolute;
+    opacity: 0.1;
+    top: 20%;
+    left: 28%;
+}
+.container4{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.the-content{
+    width: 80%;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+.left-side{
+    width: 50%;
+}
+.right-side{
+    width: 50%;
+}
+.left-side h2{
+    margin-left: 1rem;
+}
+.parag{
+    border: solid #dee2e6 1px;
+    padding: 1rem;
+    margin: 1rem;
+}
+.p0{
+    color: #fff;
+    background-color: #20c997;
+    width: 100px;
+    border-radius: 4px;
+}
+.pa{
+    color: red;
+}
+.skills{
+    display: block;
+    margin: 2rem 1.25rem;
+}
+.last-counter{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container4-2{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    
+}
+.theleft{
+    width: 450%;
+}
+
+
+.counter--1{
+    width: 500px;
+    height: 0.5rem;
+    background-color: #666;
+    border-radius: 6px;
+    position: relative;
+    margin: 3rem;
+}
+.counter--1::after{
+    content: "65%";
+    right: 0;
+    bottom: 20%;
+    position: absolute;
+    margin-bottom: 0.5rem;
+}
+.counter--1::before{
+    content: "web design";
+    left: 0;
+    bottom: 50%;
+    position: absolute;
+    margin-bottom: 0.5rem;
+}
+.count1{
+    width: 65%;
+    height: 0.5rem;
+    position: absolute;
+    background-color: #20c997;
+    border-radius: 6px;
+}
+
+
+.counter--2{
+    width: 500px;
+    height: 0.5rem;
+    background-color: #666;
+    border-radius: 6px;
+    position: relative;
+    margin: 3rem;
+}
+.counter--2::after{
+    content: "95%";
+    right: 0;
+    bottom: 20%;
+    position: absolute;
+    margin-bottom: 0.5rem;
+}
+.counter--2::before{
+    content: "HTML/CSS";
+    left: 0;
+    bottom: 50%;
+    position: absolute;
+    margin-bottom: 0.5rem;
+}
+.count2{
+    width: 95%;
+    height: 0.5rem;
+    position: absolute;
+    background-color: #20c997;
+    border-radius: 6px;
+}
+
+
+.counter--3{
+    width: 500px;
+    height: 0.5rem;
+    background-color: #666;
+    border-radius: 6px;
+    position: relative;
+    margin: 3rem;
+}
+.counter--3::after{
+    content: "65%";
+    right: 0;
+    bottom: 20%;
+    position: absolute;
+    margin-bottom: 0.5rem;
+}
+.counter--3::before{
+    content: "JavaScript";
+    left: 0;
+    bottom: 50%;
+    position: absolute;
+    margin-bottom: 0.5rem;
+}
+.count3{
+    width: 80%;
+    height: 0.5rem;
+    position: absolute;
+    background-color: #20c997;
+    border-radius: 6px;
+}
+
+.counter--4{
+    width: 500px;
+    height: 0.5rem;
+    background-color: #666;
+    border-radius: 6px;
+    position: relative;
+    margin: 3rem;
+}
+.counter--4::after{
+    content: "70%";
+    right: 0;
+    bottom: 20%;
+    position: absolute;
+    margin-bottom: 0.5rem;
+}
+.counter--4::before{
+    content: "React JS";
+    left: 0;
+    bottom: 50%;
+    position: absolute;
+    margin-bottom: 0.5rem;
+}
+.count4{
+    width: 70%;
+    height: 0.5rem;
+    position: absolute;
+    background-color: #20c997;
+    border-radius: 6px;
+}
+
+.counter--5{
+    width: 500px;
+    height: 0.5rem;
+    background-color: #666;
+    border-radius: 6px;
+    position: relative;
+    margin: 3rem;
+}
+.counter--5::after{
+    content: "60%";
+    right: 0;
+    bottom: 20%;
+    position: absolute;
+    margin-bottom: 0.5rem;
+}
+.counter--5::before{
+    content: "Angular Js";
+    left: 0;
+    bottom: 50%;
+    position: absolute;
+    margin-bottom: 0.5rem;
+}
+.count5{
+    width: 60%;
+    height: 0.5rem;
+    position: absolute;
+    background-color: #20c997;
+    border-radius: 6px;
+}
+
+.counter--6{
+    width: 500px;
+    height: 0.5rem;
+    background-color: #666;
+    border-radius: 6px;
+    position: relative;
+    margin: 3rem;
+}
+.counter--6::after{
+    content: "99%";
+    right: 0;
+    bottom: 20%;
+    position: absolute;
+    margin-bottom: 0.5rem;
+}
+.counter--6::before{
+    content: "boot strap";
+    left: 0;
+    bottom: 50%;
+    position: absolute;
+    margin-bottom: 0.5rem;
+}
+.count6{
+    width: 99%;
+    height: 0.5rem;
+    position: absolute;
+    background-color: #20c997;
+    border-radius: 6px;
+}
+.buttondiv{
+    display: flex;
+    justify-content: center;
+}
+.count-butt{
+    width:13.75rem;
+    height: 3.35rem; 
+    border-radius: 2rem;
+    background-color: #fff;
+    color: #666;
+    border: solid  #666 3px;
+    transition: 0.5s;
+}
+.count-butt:hover{
+    background-color: #666;
+    color: #fff;
+}
+.buttondiv i{
+    width: 16px;
+    height: 16px;
+}
+/* .portfolio{
+    text-align: center;
+}
+.portfolio h2{
+    padding-top: 100;
+    font-size: 2.25rem;
+    color: #000;
+    position: relative;
+    z-index: 555;
+}
+.brd{
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    left: 46%;
+    background-color: #20c997;
+}
+.portfolio h2::before{
+    content: "PORTFOLIO";
+    font-size: 8.25rem ;
+    position: absolute;
+    opacity: 0.1;
+    top: 20%;
+    left: 28%;
+}
+.the-images{
+    gap: 30px 10px
+    ;
+    margin-top: 3rem;
+    width: 70%;
+    /* height: 260vh; */
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.the-images img{
+    width: 40rem;
+    height: 30rem;
+}
+.first{
+    width: 30%;
+    padding: 3rem;
+}
+.second{
+    width: 30%;
+    padding: 3rem;
+}
+.last{
+    width: 30%;
+    padding: 3rem;
+}
+.client{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.client h2{
+    padding-top: 100;
+    font-size: 2.25rem;
+    color: #000;
+    position: relative;
+    z-index: 555;
+}
+.brd{
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    left: 46%;
+    background-color: #20c997;
+}
+.client h2::before{
+    content: "TESTIMONIAL";
+    font-size: 8.25rem ;
+    position: absolute;
+    opacity: 0.1;
+    top: 20%;
+    left: 28%;
+}
+.section-six{
+    display: flex;
+    justify-content: center;
+}
+.section-content{
+    width: 70%;
+}
+.left-hand{
+    width: 45%;
+}
+.label1{
+    margin: 2rem;
+    display: flex;
+}
+.label1 img{
+    border-radius: 50%;
+    margin-right: 1rem;
+} */ 
+.portfolio {
+    width: 100%;
+    height: 1350px;
+    background-color: #f8f9fa;
+    margin-top: 300px;
+    position: relative;
+}
+
+.portfolio h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 132px;
+    text-align: center;
+    color: #dee3e4;
+}
+
+.portfolio .h21 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    color: #212529;
+    position: absolute;
+    top: 80px;
+    margin-left: 44%;
+}
+
+.portfolio .h21::after {
+    content: "";
+    background-color: #20c977;
+    width: 70%;
+    height: 3px;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+.portfolio .number1 {
+    color: #20c977;
+    margin-left: 40%;
+    padding: 10px;
+    border-bottom: 2px solid #20c977;
+}
+
+.portfolio a {
+    text-decoration: none;
+    color: #7b8084;
+    padding: 15px;
+    margin: auto;
+    transition: all 0.5;
+}
+
+.portfolio a:hover {
+    color: #20c977;
+}
+
+.portfolio .items {
+    width: 85%;
+    margin: auto;
+    margin-top: 75px;
+    background-color: red;
+    position: relative;
+}
+
+.portfolio .items .item1 {
+    width: 356px;
+    position: absolute;
+    overflow: hidden;
+
+}
+
+.portfolio .items .item1 img {
+    width: 100%;
+    transition: all 0.6s;
+}
+
+.portfolio .items .item2 {
+    width: 356px;
+    position: absolute;
+    left: 400px;
+    overflow: hidden;
+}
+
+.portfolio .items .item2 img {
+    width: 100%;
+    transition: all 0.6s;
+}
+
+.portfolio .items .item3 {
+    width: 356px;
+    position: absolute;
+    right: 00px;
+    overflow: hidden;
+}
+
+.portfolio .items .item3 img {
+    width: 100%;
+    transition: all 0.6s;
+}
+
+.portfolio .items .item4 {
+    width: 356px;
+    position: absolute;
+    top: 280px;
+    left: 00px;
+    overflow: hidden;
+}
+
+.portfolio .items .item4 img {
+    width: 100%;
+    transition: all 0.6s;
+}
+
+.portfolio .items .item5 {
+    width: 356px;
+    position: absolute;
+    top: 280px;
+    right: 00px;
+    overflow: hidden;
+}
+
+.portfolio .items .item5 img {
+    width: 100%;
+    transition: all 0.6s;
+}
+
+.portfolio .items .item6 {
+    width: 356px;
+    position: absolute;
+    top: 540px;
+    right: 00px;
+    overflow: hidden;
+}
+
+.portfolio .items .item6 img {
+    width: 100%;
+    transition: all 0.6s;
+}
+
+.portfolio .items .item7 {
+    width: 356px;
+    position: absolute;
+    top: 620px;
+    right: 390px;
+    overflow: hidden;
+}
+
+.portfolio .items .item7 img {
+    width: 100%;
+    transition: all 0.6s;
+}
+
+.portfolio .items .layer {
+    width: 100%;
+    background-color: transparent;
+    height: 100%;
+    position: absolute;
+    z-index: 99999;
+    top: 0px;
+    transition: all 0.5s;
+}
+
+.portfolio .items .layer p {
+    text-align: center;
+    padding-top: 50%;
+}
+
+.portfolio .items .item1:hover .layer {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.portfolio .items .item2:hover .layer {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.portfolio .items .item3:hover .layer {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.portfolio .items .item4:hover .layer {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.portfolio .items .item5:hover .layer {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.portfolio .items .item6:hover .layer {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.portfolio .items .item7:hover .layer {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.portfolio .items .item1:hover img {
+    transform: scale(1.2);
+}
+
+.portfolio .items .item2:hover img {
+    transform: scale(1.2);
+}
+
+.portfolio .items .item3:hover img {
+    transform: scale(1.2);
+}
+
+.portfolio .items .item4:hover img {
+    transform: scale(1.2);
+}
+
+.portfolio .items .item5:hover img {
+    transform: scale(1.2);
+}
+
+.portfolio .items .item6:hover img {
+    transform: scale(1.2);
+}
+
+.portfolio .items .item7:hover img {
+    transform: scale(1.2);
+}
+
+.testimonial {
+    width: 100%;
+    margin-top: 90px;
+    height: 700px;
+    position: relative;
+}
+
+.testimonial h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 132px;
+    text-align: center;
+    color: #dee3e4;
+}
+
+.testimonial .h21 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    color: #212529;
+    position: absolute;
+    top: 80px;
+    margin-left: 40%;
+}
+
+.testimonial .h21::after {
+    content: "";
+    background-color: #20c977;
+    width: 70%;
+    height: 3px;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
+
+.testimonial .items {
+    display: flex;
+    flex-flow: row;
+    margin-top: 50px;
+}
+
+.testimonial .item {
+    width: 545px;
+    height: 350px;
+    background-color: #f8f9fa;
+    margin-left: 100px;
+    position: relative;
+}
+
+.testimonial .item img {
+    border-radius: 50%;
+    display: inline;
+    margin-top: 54px;
+    margin-left: 60px;
+}
+
+.testimonial .item p {
+    position: absolute;
+    top: 55px;
+    left: 140px;
+    font-weight: 700;
+}
+
+.testimonial .item p::after {
+    content: "User From USA";
+    position: absolute;
+    top: 130%;
+    left: 0;
+    color: #6c757d;
+    font-weight: 400;
+}
+
+.testimonial .item .bot {
+    position: absolute;
+    top: 120px;
+    left: 40px;
+    padding: 30px;
+}
+
+.testimonial .item .bot::after {
+    content: "";
+}
+
+.testimonial .item .stars {
+    position: absolute;
+    top: 280px;
+    left: 70;
+    color: #ffc107;
+}
+
+.testimonial .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #20c977;
+    border-radius: 50%;
+    margin-left: 50%;
+    margin-top: 30px;
+}
+
+.testimonial .dot1 {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-left: 52%;
+    margin-top: -10px;
+}
+
+.contact {
+    width: 100%;
+    margin-top: 90px;
+    height: 650px;
+    position: relative;
+    background-color: #f8f9fa;
+}
+
+.contact h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 132px;
+    text-align: center;
+    color: #dee3e4;
+}
+
+.contact .h21 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    color: #212529;
+    position: absolute;
+    top: 80px;
+    margin-left: 40%;
+}
+
+.contact .h21::after {
+    content: "";
+    background-color: #20c977;
+    width: 70%;
+    height: 3px;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
+
+.contact .info {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.contact .info .left {
+    width: 30%;
+    float: left;
+}
+
+.contact .info .right {
+    width: 70%;
+    float: left;
+}
+
+.contact .info .left p {
+    color: #252b33;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.contact .info .left .p1 {
+    color: #4c4d4d;
+    font-size: 16px;
+    font-weight: 200;
+    position: relative;
+    top: -20px;
+}
+
+.contact .info .left .fa-solid {
+    color: #20c977;
+    font-size: 21px;
+    padding: 10px;
+    position: relative;
+    top: -20px;
+}
+.contact .info .left .p2{
+    position: relative;
+    top: -20px;
+}
+
+.contact .info .left .fa-phone-flip::after {
+    content: "(060) 444 434 444";
+    padding-left: 10px;
+    color: #4c4d4d;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact .info .left .fa-fax::after {
+    content: "(060) 555 545 555";
+    padding-left: 10px;
+    color: #4c4d4d;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact .info .left .fa-envelope::after {
+    content: "chat@simone.com";
+    padding-left: 10px;
+    color: #4c4d4d;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact .info .right p {
+    color: #252b33;
+    font-size: 21px;
+    font-weight: 600;
+    
+}
+
+.contact .info .right .name {
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    border: #ccc 1px solid;
+    float: left;
+    font-size: 16px;
+}
+
+.contact .info .right .email {
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    border: #ccc 1px solid;
+    float: left;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.contact .info .right .comm {
+    width: 830px;
+    height: 145px;
+    border-radius: 5px;
+    border: #ccc 1px solid;
+    margin-top: 30px;
+    font-size: 16px;
+}
+.contact .info .right button{
+    padding: 15px 40px;
+    background-color: #20c977;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    position: relative;
+    left: 290px;
+    top: 30px;
+    transition: all 0.5s;
+}
+.contact .info .right button:hover{
+    background-color: #1baa80;
+}
+.end{
+    width: 100%;
+    height: 170px;
+    position: relative;
+}
+.end p{
+    position: absolute;
+    top: 70px;
+    left: 120px;
+    color: #252b33;
+    font-size: 16px;
+
+}
+.end p::after{
+    content: "Simone";
+    color: #20c977;
+    font-size: 16px;
+    padding-left: 5px;
+    transition: all 0.5s;
+}
+.end p:hover::after{
+    color: #1baa80;
+}
+.end p::before{
+    content: ". All Rights Reserved.";
+    color: #252b33;
+    font-size: 16px;
+    position: absolute;
+    top: 0px;
+    left: 210px;
+    width: 180px;
+}
+.end .p1{
+    color: #252b33;
+    font-size: 16px;
+    position: absolute;
+    right: 200px;
+    top: 70px;
+    transition: all 0.5s;
+    font-weight: 100;
+}
+.end .p1::after{
+    content: "";
+    width: 2px;
+    height: 15px;
+    background-color: #555;
+    position: absolute;
+    right: -20px;
+    top: 6px;
+    transition: all 0.5s;
+}
+.end .p1:hover{
+    color: #20c977;
+}
+.end .p1::before{
+    content: "Disclaimer";
+    color: #252b33;
+    font-size: 16px;
+    position: absolute;
+    left: 160px;
+    top: 2px;
+    transition: all 0.5s;
+}
+.end .p1:hover::before{
+    color: #20c977;
+}
